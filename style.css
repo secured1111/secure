@@ -1,0 +1,113 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: #000000; /* Exact black background for X */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo section with space for a custom logo */
+.logo {
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  width: 70px; /* Adjust this as per the actual logo size */
+}
+
+/* Main heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Login form inputs */
+.login-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #cbd1d4;
+}
+
+/* Login button styling */
+.login-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1da1f2; /* X's signature blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0d8de3;
+}
+
+/* Forgot password and signup links */
+.forgot-password a,
+.signup a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.forgot-password a:hover,
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup a {
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-box {
+      padding: 30px;
+  }
+}

